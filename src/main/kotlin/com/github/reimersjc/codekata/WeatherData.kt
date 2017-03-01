@@ -16,7 +16,7 @@ class WeatherData(
     constructor(): this(0, 0, 0) {}
 
     override fun getSpread(): Int {
-        return Math.abs(Math.abs(maxTemp) - Math.abs(minTemp))
+        return Math.abs(maxTemp - minTemp)
     }
 
     override fun toString(): String {

@@ -21,7 +21,7 @@ class DataMungerSpec : Spek({
         it ("should result in team 'Aston_Villa' having the smallest spread between scores for and against") {
             val munger = DataMunger<FootballData>(FootballImportStrategy())
             val result = munger.mung("football.dat", FootballData::class.java)
-            println("Team with the smallest spread between wins for and againts is ${result.teamName}\n")
+            println("Team with the smallest spread between wins for and against is ${result.teamName}\n")
             assertEquals("Aston_Villa", result.teamName)
         }
     }

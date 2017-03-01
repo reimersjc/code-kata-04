@@ -15,7 +15,7 @@ class FootballData (
     constructor(): this("", 0, 0) {}
 
     override fun getSpread(): Int {
-        return Math.abs(Math.abs(scoreFor) - Math.abs(scoreAgainst))
+        return Math.abs(scoreFor - scoreAgainst)
     }
 
     override fun toString(): String {
